@@ -1,0 +1,3 @@
+[submodule "vendor/packing_tools"]
+	path = vendor/packing_tools
+	url = https://github.com/Davidebyzero/packing_squares_in_squares__tools

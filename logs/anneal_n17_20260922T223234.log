@@ -1,0 +1,40 @@
+anneal n=17 starts=30 workers=15 base_seed=1 record=4.6755300936045509516341112704831500000000000000000 s0=seed file save_below=4.690000
+config {'n': 17, 's0': 0.0, 't0': 0.01, 't_ratio': 1e-08, 'stage_sweeps': 2000, 'max_sweeps': 1000000, 'retries': 4, 'reset_ladder': 1, 'e_tol': 1e-10, 'shrink': 0.01, 'min_shrink': 1e-07, 'grow_limit': 1.15, 'p_trans': 0.35, 'p_rot': 0.2, 'p_both': 0.35, 'p_swap': 0.09, 'p_rand': 0.01, 'p_bias': 0.5, 'mode': 'ladder', 'mu': 0.5, 'press_sweeps': 200000, 'press_t0': 0.05, 'press_t1': 1e-08, 'p_s': 0.0, 'fin_t0': 1e-06, 'fin_shrink': 0.0001, 'seed_from': 'records/17.json', 'perturb': 0.1}
+[1/30] seed 3 s=4.701358363 pen=0.0e+00 moves=1.70e+07 7.5s *best
+[2/30] seed 9 s=4.767774053 pen=0.0e+00 moves=1.70e+07 7.6s
+[3/30] seed 2 s=4.767774417 pen=0.0e+00 moves=1.70e+07 7.7s
+[4/30] seed 1 s=4.708708421 pen=0.0e+00 moves=1.70e+07 7.9s
+[5/30] seed 15 s=4.679002203 pen=0.0e+00 moves=1.70e+07 7.9s *best saved n17_s4.679002203_seed15.json
+[6/30] seed 10 s=4.767770541 pen=0.0e+00 moves=1.70e+07 7.9s
+[7/30] seed 5 s=4.693202610 pen=0.0e+00 moves=1.70e+07 8.0s
+[8/30] seed 14 s=4.707113829 pen=0.0e+00 moves=1.70e+07 8.0s
+[9/30] seed 12 s=4.677683729 pen=0.0e+00 moves=1.70e+07 8.2s *best saved n17_s4.677683729_seed12.json
+[10/30] seed 6 s=4.683925513 pen=0.0e+00 moves=1.70e+07 8.2s saved n17_s4.683925513_seed6.json
+[11/30] seed 4 s=4.677708683 pen=0.0e+00 moves=1.70e+07 8.2s saved n17_s4.677708683_seed4.json
+[12/30] seed 13 s=4.677678626 pen=0.0e+00 moves=1.70e+07 8.2s *best saved n17_s4.677678626_seed13.json
+[13/30] seed 7 s=4.675627320 pen=0.0e+00 moves=1.70e+07 8.3s *best saved n17_s4.675627320_seed7.json
+[14/30] seed 8 s=4.677671504 pen=0.0e+00 moves=1.70e+07 8.6s saved n17_s4.677671504_seed8.json
+[15/30] seed 11 s=4.675555541 pen=0.0e+00 moves=1.70e+07 8.7s *best saved n17_s4.675555541_seed11.json
+[16/30] seed 17 s=4.677677336 pen=0.0e+00 moves=1.70e+07 8.5s saved n17_s4.677677336_seed17.json
+[17/30] seed 23 s=4.771752015 pen=0.0e+00 moves=1.70e+07 8.1s
+[18/30] seed 18 s=4.677713077 pen=0.0e+00 moves=1.70e+07 8.5s saved n17_s4.677713077_seed18.json
+[19/30] seed 28 s=5.000066532 pen=0.0e+00 moves=1.70e+07 7.9s
+[20/30] seed 21 s=4.677663461 pen=0.0e+00 moves=1.70e+07 8.3s saved n17_s4.677663461_seed21.json
+[21/30] seed 22 s=4.693010768 pen=0.0e+00 moves=1.70e+07 8.3s
+[22/30] seed 19 s=4.679049672 pen=0.0e+00 moves=1.70e+07 8.4s saved n17_s4.679049672_seed19.json
+[23/30] seed 16 s=4.675631245 pen=0.0e+00 moves=1.70e+07 8.8s saved n17_s4.675631245_seed16.json
+[24/30] seed 27 s=4.675547772 pen=0.0e+00 moves=1.70e+07 8.2s *best saved n17_s4.675547772_seed27.json
+[25/30] seed 25 s=4.677690347 pen=0.0e+00 moves=1.70e+07 8.3s saved n17_s4.677690347_seed25.json
+[26/30] seed 24 s=4.707107527 pen=0.0e+00 moves=1.70e+07 8.4s
+[27/30] seed 26 s=4.677823406 pen=0.0e+00 moves=1.70e+07 8.6s saved n17_s4.677823406_seed26.json
+[28/30] seed 30 s=4.730051975 pen=0.0e+00 moves=1.70e+07 8.1s
+[29/30] seed 20 s=4.678499056 pen=0.0e+00 moves=1.70e+07 8.9s saved n17_s4.678499056_seed20.json
+[30/30] seed 29 s=4.677657784 pen=0.0e+00 moves=1.70e+07 8.2s saved n17_s4.677657784_seed29.json
+------------------------------------------------------------
+best s = 4.675547772 (seed 27)
+record = 4.675530094; gap = +1.768e-05
+s percentiles 0/10/50/90: 4.675548 4.675631 4.678751 4.767774
+within 1e-06 of record: 0/30
+within 1e-04 of record: 3/30
+within 1e-03 of record: 4/30
+saved 18 candidates; wall 16.9s; 0.16 h per 1000 starts at 15 workers

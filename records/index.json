@@ -1,0 +1,972 @@
+{
+ "1": {
+  "s": "1",
+  "svg": "square-1.svg",
+  "analytic": true
+ },
+ "2": {
+  "s": "2",
+  "svg": "square-2.svg",
+  "analytic": true
+ },
+ "3": {
+  "s": "2",
+  "svg": "square-2.svg",
+  "analytic": true
+ },
+ "4": {
+  "s": "2",
+  "svg": "square-4.svg",
+  "analytic": true
+ },
+ "5": {
+  "s": "2.70710678118654",
+  "svg": "square-5.svg",
+  "analytic": true
+ },
+ "6": {
+  "s": "3",
+  "svg": "square-6.svg",
+  "analytic": true
+ },
+ "7": {
+  "s": "3",
+  "svg": "square-8.svg",
+  "analytic": true
+ },
+ "8": {
+  "s": "3",
+  "svg": "square-8.svg",
+  "analytic": true
+ },
+ "9": {
+  "s": "3",
+  "svg": "square-9.svg",
+  "analytic": true
+ },
+ "10": {
+  "s": "3.70710678118654",
+  "svg": "square-10.svg",
+  "analytic": true
+ },
+ "11": {
+  "s": "3.87708359002281",
+  "svg": "square-11.svg",
+  "analytic": true
+ },
+ "13": {
+  "s": "4",
+  "svg": "square-13.svg",
+  "analytic": true
+ },
+ "14": {
+  "s": "4",
+  "svg": "square-15.svg",
+  "analytic": true
+ },
+ "15": {
+  "s": "4",
+  "svg": "square-15.svg",
+  "analytic": true
+ },
+ "17": {
+  "s": "4.67553009360455",
+  "svg": "square-17.svg",
+  "analytic": true
+ },
+ "18": {
+  "s": "4.82287565553229",
+  "svg": "square-18.svg",
+  "analytic": true
+ },
+ "19": {
+  "s": "4.88561808316412",
+  "svg": "square-19.svg",
+  "analytic": true
+ },
+ "22": {
+  "s": "5",
+  "svg": "square-22.svg",
+  "analytic": true
+ },
+ "23": {
+  "s": "5",
+  "svg": "square-23.svg",
+  "analytic": true
+ },
+ "24": {
+  "s": "5",
+  "svg": "square-24.svg",
+  "analytic": true
+ },
+ "26": {
+  "s": "5.62132034355964",
+  "svg": "square-26b.svg",
+  "analytic": true
+ },
+ "27": {
+  "s": "5.70710678118654",
+  "svg": "square-27.svg",
+  "analytic": true
+ },
+ "28": {
+  "s": "5.82444461667405",
+  "svg": "square-28.svg",
+  "analytic": true
+ },
+ "29": {
+  "s": "5.93383346267692",
+  "svg": "square-29.svg",
+  "analytic": true
+ },
+ "33": {
+  "s": "6",
+  "svg": "square-33.svg",
+  "analytic": true
+ },
+ "34": {
+  "s": "6",
+  "svg": "square-34.svg",
+  "analytic": true
+ },
+ "35": {
+  "s": "6",
+  "svg": "square-35.svg",
+  "analytic": true
+ },
+ "37": {
+  "s": "6.59861960924436",
+  "svg": "square-37.svg",
+  "analytic": true
+ },
+ "38": {
+  "s": "6.70710678118654",
+  "svg": "square-38.svg",
+  "analytic": true
+ },
+ "39": {
+  "s": "6.81072208306864",
+  "svg": "square-39.svg",
+  "analytic": true
+ },
+ "40": {
+  "s": "6.82842712474619",
+  "svg": "square-40.svg",
+  "analytic": true
+ },
+ "41": {
+  "s": "6.92669309446880",
+  "svg": "square-41.svg",
+  "analytic": true
+ },
+ "46": {
+  "s": "7",
+  "svg": "square-46.svg",
+  "analytic": true
+ },
+ "47": {
+  "s": "7",
+  "svg": "square-48.svg",
+  "analytic": true
+ },
+ "48": {
+  "s": "7",
+  "svg": "square-48.svg",
+  "analytic": true
+ },
+ "50": {
+  "s": "7.57142857142857",
+  "svg": "square-50.svg",
+  "analytic": true
+ },
+ "51": {
+  "s": "7.70079923541701",
+  "svg": "square-51.svg",
+  "analytic": true
+ },
+ "52": {
+  "s": "7.70710678118654",
+  "svg": "square-52.svg",
+  "analytic": true
+ },
+ "53": {
+  "s": "7.82287565553229",
+  "svg": "square-53.svg",
+  "analytic": true
+ },
+ "54": {
+  "s": "7.84666719284348",
+  "svg": "square-54.svg",
+  "analytic": true
+ },
+ "55": {
+  "s": "7.94577100750391",
+  "svg": "square-55.svg",
+  "analytic": true
+ },
+ "62": {
+  "s": "8",
+  "svg": "square-63.svg",
+  "analytic": true
+ },
+ "63": {
+  "s": "8",
+  "svg": "square-63.svg",
+  "analytic": true
+ },
+ "65": {
+  "s": "8.53553390593273",
+  "svg": "square-65.svg",
+  "analytic": true
+ },
+ "66": {
+  "s": "8.65685424949238",
+  "svg": "square-66.svg",
+  "analytic": true
+ },
+ "67": {
+  "s": "8.70710678118654",
+  "svg": "square-67.svg",
+  "analytic": true
+ },
+ "68": {
+  "s": "8.79887438888362",
+  "svg": "square-68.svg",
+  "analytic": true
+ },
+ "69": {
+  "s": "8.82719465572973",
+  "svg": "square-69.svg",
+  "analytic": true
+ },
+ "70": {
+  "s": "8.88166675700900",
+  "svg": "square-70.svg",
+  "analytic": true
+ },
+ "71": {
+  "s": "8.94407155757031",
+  "svg": "square-71.svg",
+  "analytic": true
+ },
+ "79": {
+  "s": "9",
+  "svg": "square-80.svg",
+  "analytic": true
+ },
+ "80": {
+  "s": "9",
+  "svg": "square-80.svg",
+  "analytic": true
+ },
+ "82": {
+  "s": "9.53553390593273",
+  "svg": "square-82.svg",
+  "analytic": true
+ },
+ "83": {
+  "s": "9.63475764863108",
+  "svg": "square-83.svg",
+  "analytic": true
+ },
+ "84": {
+  "s": "9.70710678118654",
+  "svg": "square-84.svg",
+  "analytic": true
+ },
+ "85": {
+  "s": "9.74264068711928",
+  "svg": "square-85b.svg",
+  "analytic": true
+ },
+ "86": {
+  "s": "9.82287565553229",
+  "svg": "square-86.svg",
+  "analytic": true
+ },
+ "87": {
+  "s": "9.83881526994826",
+  "svg": "square-87.svg",
+  "analytic": true
+ },
+ "88": {
+  "s": "9.88815305375857",
+  "svg": "square-88.svg",
+  "analytic": true
+ },
+ "89": {
+  "s": "9.94974746830583",
+  "svg": "square-89.svg",
+  "analytic": true
+ },
+ "98": {
+  "s": "10",
+  "svg": "square-99.svg",
+  "analytic": true
+ },
+ "99": {
+  "s": "10",
+  "svg": "square-99.svg",
+  "analytic": true
+ },
+ "101": {
+  "s": "10.53553390593273",
+  "svg": "square-101.svg",
+  "analytic": true
+ },
+ "102": {
+  "s": "10.61138794077522",
+  "svg": "square-102.svg",
+  "analytic": true
+ },
+ "103": {
+  "s": "10.70378195534367",
+  "svg": "square-103.svg",
+  "analytic": false
+ },
+ "104": {
+  "s": "10.70710678118654",
+  "svg": "square-104.svg",
+  "analytic": true
+ },
+ "105": {
+  "s": "10.80761933330707",
+  "svg": "square-105.svg",
+  "analytic": false
+ },
+ "106": {
+  "s": "10.82297973416944",
+  "svg": "square-106.svg",
+  "analytic": true
+ },
+ "107": {
+  "s": "10.84666719284348",
+  "svg": "square-107.svg",
+  "analytic": true
+ },
+ "108": {
+  "s": "10.92591939016138",
+  "svg": "square-108.svg",
+  "analytic": true
+ },
+ "109": {
+  "s": "10.94974746830583",
+  "svg": "square-109.svg",
+  "analytic": true
+ },
+ "110": {
+  "s": "10.99679327401957",
+  "svg": "square-110.svg",
+  "analytic": false
+ },
+ "119": {
+  "s": "11",
+  "svg": "square-120.svg",
+  "analytic": true
+ },
+ "120": {
+  "s": "11",
+  "svg": "square-120.svg",
+  "analytic": true
+ },
+ "122": {
+  "s": "11.53553390593273",
+  "svg": "square-122.svg",
+  "analytic": true
+ },
+ "123": {
+  "s": "11.60139979378801",
+  "svg": "square-123.svg",
+  "analytic": true
+ },
+ "124": {
+  "s": "11.65685424949238",
+  "svg": "square-124.svg",
+  "analytic": true
+ },
+ "125": {
+  "s": "11.70710678118654",
+  "svg": "square-125.svg",
+  "analytic": true
+ },
+ "126": {
+  "s": "11.77473513240654",
+  "svg": "square-126.svg",
+  "analytic": false
+ },
+ "127": {
+  "s": "11.82287565553229",
+  "svg": "square-127.svg",
+  "analytic": true
+ },
+ "128": {
+  "s": "11.82509196821368",
+  "svg": "square-128.svg",
+  "analytic": true
+ },
+ "129": {
+  "s": "11.88130621809000",
+  "svg": "square-129.svg",
+  "analytic": true
+ },
+ "130": {
+  "s": "11.91119052015898",
+  "svg": "square-130.svg",
+  "analytic": true
+ },
+ "131": {
+  "s": "11.95652543280926",
+  "svg": "square-131.svg",
+  "analytic": false
+ },
+ "132": {
+  "s": "11.99137344423646",
+  "svg": "square-132.svg",
+  "analytic": false
+ },
+ "142": {
+  "s": "12",
+  "svg": "square-143.svg",
+  "analytic": true
+ },
+ "143": {
+  "s": "12",
+  "svg": "square-143.svg",
+  "analytic": true
+ },
+ "145": {
+  "s": "12.53553390593273",
+  "svg": "square-145.svg",
+  "analytic": true
+ },
+ "146": {
+  "s": "12.60090777851301",
+  "svg": "square-146.svg",
+  "analytic": true
+ },
+ "147": {
+  "s": "12.65685424949238",
+  "svg": "square-148.svg",
+  "analytic": true
+ },
+ "148": {
+  "s": "12.65685424949238",
+  "svg": "square-148.svg",
+  "analytic": true
+ },
+ "149": {
+  "s": "12.70710678118654",
+  "svg": "square-149.svg",
+  "analytic": true
+ },
+ "150": {
+  "s": "12.77817459305202",
+  "svg": "square-150.svg",
+  "analytic": true
+ },
+ "151": {
+  "s": "12.82287565553229",
+  "svg": "square-151.svg",
+  "analytic": true
+ },
+ "152": {
+  "s": "12.83095954472600",
+  "svg": "square-152.svg",
+  "analytic": false
+ },
+ "153": {
+  "s": "12.88166675700900",
+  "svg": "square-153.svg",
+  "analytic": true
+ },
+ "154": {
+  "s": "12.93166712962655",
+  "svg": "square-154.svg",
+  "analytic": false
+ },
+ "155": {
+  "s": "12.95844711161529",
+  "svg": "square-155.svg",
+  "analytic": false
+ },
+ "156": {
+  "s": "12.98208376048414",
+  "svg": "square-156.svg",
+  "analytic": false
+ },
+ "167": {
+  "s": "13",
+  "svg": "square-168.svg",
+  "analytic": true
+ },
+ "168": {
+  "s": "13",
+  "svg": "square-168.svg",
+  "analytic": true
+ },
+ "170": {
+  "s": "13.53553390593273",
+  "svg": "square-170b.svg",
+  "analytic": true
+ },
+ "171": {
+  "s": "13.57142857142857",
+  "svg": "square-171.svg",
+  "analytic": true
+ },
+ "172": {
+  "s": "13.61898898660160",
+  "svg": "square-172.svg",
+  "analytic": true
+ },
+ "173": {
+  "s": "13.65685424949238",
+  "svg": "square-173.svg",
+  "analytic": true
+ },
+ "174": {
+  "s": "13.70710678118654",
+  "svg": "square-174.svg",
+  "analytic": true
+ },
+ "175": {
+  "s": "13.77817459305202",
+  "svg": "square-175.svg",
+  "analytic": true
+ },
+ "176": {
+  "s": "13.82287565553229",
+  "svg": "square-176.svg",
+  "analytic": true
+ },
+ "177": {
+  "s": "13.82302875075647",
+  "svg": "square-177.svg",
+  "analytic": true
+ },
+ "178": {
+  "s": "13.84666719284348",
+  "svg": "square-178.svg",
+  "analytic": true
+ },
+ "179": {
+  "s": "13.89534106997649",
+  "svg": "square-179.svg",
+  "analytic": true
+ },
+ "180": {
+  "s": "13.93508705291129",
+  "svg": "square-180.svg",
+  "analytic": false
+ },
+ "181": {
+  "s": "13.95690672341755",
+  "svg": "square-181.svg",
+  "analytic": false
+ },
+ "182": {
+  "s": "13.97419105332569",
+  "svg": "square-182.svg",
+  "analytic": false
+ },
+ "194": {
+  "s": "14",
+  "svg": "square-195.svg",
+  "analytic": true
+ },
+ "195": {
+  "s": "14",
+  "svg": "square-195.svg",
+  "analytic": true
+ },
+ "197": {
+  "s": "14.53553390593273",
+  "svg": "square-197.svg",
+  "analytic": true
+ },
+ "198": {
+  "s": "14.57142857142857",
+  "svg": "square-198.svg",
+  "analytic": true
+ },
+ "199": {
+  "s": "14.61898898660160",
+  "svg": "square-199.svg",
+  "analytic": true
+ },
+ "200": {
+  "s": "14.65685424949238",
+  "svg": "square-200.svg",
+  "analytic": true
+ },
+ "201": {
+  "s": "14.70710678118654",
+  "svg": "square-201.svg",
+  "analytic": true
+ },
+ "202": {
+  "s": "14.72792206135785",
+  "svg": "square-202.svg",
+  "analytic": true
+ },
+ "203": {
+  "s": "14.77817459305202",
+  "svg": "square-203a.svg",
+  "analytic": true
+ },
+ "204": {
+  "s": "14.82287565553229",
+  "svg": "square-204.svg",
+  "analytic": true
+ },
+ "205": {
+  "s": "14.82445114612408",
+  "svg": "square-205.svg",
+  "analytic": true
+ },
+ "206": {
+  "s": "14.87221902902620",
+  "svg": "square-206.svg",
+  "analytic": false
+ },
+ "207": {
+  "s": "14.89395494255333",
+  "svg": "square-207.svg",
+  "analytic": false
+ },
+ "208": {
+  "s": "14.93776656277905",
+  "svg": "square-208.svg",
+  "analytic": false
+ },
+ "209": {
+  "s": "14.95861500087481",
+  "svg": "square-209.svg",
+  "analytic": false
+ },
+ "210": {
+  "s": "14.97413341886404",
+  "svg": "square-210.svg",
+  "analytic": false
+ },
+ "223": {
+  "s": "15",
+  "svg": "square-224.svg",
+  "analytic": true
+ },
+ "224": {
+  "s": "15",
+  "svg": "square-224.svg",
+  "analytic": true
+ },
+ "226": {
+  "s": "15.53553390593273",
+  "svg": "square-226.svg",
+  "analytic": true
+ },
+ "227": {
+  "s": "15.57106781186547",
+  "svg": "square-227.svg",
+  "analytic": true
+ },
+ "228": {
+  "s": "15.60902282132495",
+  "svg": "square-228.svg",
+  "analytic": true
+ },
+ "229": {
+  "s": "15.65685424949238",
+  "svg": "square-229.svg",
+  "analytic": true
+ },
+ "230": {
+  "s": "15.68292682926829",
+  "svg": "square-230.svg",
+  "analytic": true
+ },
+ "231": {
+  "s": "15.70710678118654",
+  "svg": "square-231.svg",
+  "analytic": true
+ },
+ "232": {
+  "s": "15.77817459305202",
+  "svg": "square-233.svg",
+  "analytic": true
+ },
+ "233": {
+  "s": "15.77817459305202",
+  "svg": "square-233.svg",
+  "analytic": true
+ },
+ "234": {
+  "s": "15.82287565553229",
+  "svg": "square-234.svg",
+  "analytic": true
+ },
+ "235": {
+  "s": "15.82660563342856",
+  "svg": "square-235.svg",
+  "analytic": true
+ },
+ "236": {
+  "s": "15.87607539315201",
+  "svg": "square-236.svg",
+  "analytic": false
+ },
+ "237": {
+  "s": "15.91421356237309",
+  "svg": "square-237.svg",
+  "analytic": true
+ },
+ "238": {
+  "s": "15.93965520031394",
+  "svg": "square-238.svg",
+  "analytic": false
+ },
+ "239": {
+  "s": "15.95635358406308",
+  "svg": "square-239.svg",
+  "analytic": false
+ },
+ "240": {
+  "s": "15.97556282833087",
+  "svg": "square-240.svg",
+  "analytic": false
+ },
+ "241": {
+  "s": "15.99080517810520",
+  "svg": "square-241.svg",
+  "analytic": false
+ },
+ "254": {
+  "s": "16",
+  "svg": "square-255.svg",
+  "analytic": true
+ },
+ "255": {
+  "s": "16",
+  "svg": "square-255.svg",
+  "analytic": true
+ },
+ "257": {
+  "s": "16.53553390593273",
+  "svg": "square-257a.svg",
+  "analytic": true
+ },
+ "258": {
+  "s": "16.57106781186547",
+  "svg": "square-258.svg",
+  "analytic": true
+ },
+ "259": {
+  "s": "16.60257141234448",
+  "svg": "square-259.svg",
+  "analytic": true
+ },
+ "260": {
+  "s": "16.65685424949238",
+  "svg": "square-260b.svg",
+  "analytic": true
+ },
+ "261": {
+  "s": "16.68292682926829",
+  "svg": "square-261.svg",
+  "analytic": true
+ },
+ "262": {
+  "s": "16.70710678118654",
+  "svg": "square-262.svg",
+  "analytic": true
+ },
+ "263": {
+  "s": "16.74264068711928",
+  "svg": "square-263.svg",
+  "analytic": true
+ },
+ "264": {
+  "s": "16.77817459305202",
+  "svg": "square-265.svg",
+  "analytic": true
+ },
+ "265": {
+  "s": "16.77817459305202",
+  "svg": "square-265.svg",
+  "analytic": true
+ },
+ "266": {
+  "s": "16.82306208283780",
+  "svg": "square-266.svg",
+  "analytic": true
+ },
+ "267": {
+  "s": "16.84666719284348",
+  "svg": "square-267.svg",
+  "analytic": true
+ },
+ "268": {
+  "s": "16.87931143465371",
+  "svg": "square-268.svg",
+  "analytic": false
+ },
+ "269": {
+  "s": "16.90596764828402",
+  "svg": "square-269.svg",
+  "analytic": true
+ },
+ "270": {
+  "s": "16.94062059800744",
+  "svg": "square-270.svg",
+  "analytic": false
+ },
+ "271": {
+  "s": "16.95499909412532",
+  "svg": "square-271.svg",
+  "analytic": false
+ },
+ "272": {
+  "s": "16.96971602419903",
+  "svg": "square-272.svg",
+  "analytic": false
+ },
+ "273": {
+  "s": "16.98820725030513",
+  "svg": "square-273.svg",
+  "analytic": false
+ },
+ "287": {
+  "s": "17",
+  "svg": "square-288.svg",
+  "analytic": true
+ },
+ "288": {
+  "s": "17",
+  "svg": "square-288.svg",
+  "analytic": true
+ },
+ "290": {
+  "s": "17.53553390593273",
+  "svg": "square-291.svg",
+  "analytic": true
+ },
+ "291": {
+  "s": "17.53553390593273",
+  "svg": "square-291.svg",
+  "analytic": true
+ },
+ "292": {
+  "s": "17.60257141234448",
+  "svg": "square-292.svg",
+  "analytic": true
+ },
+ "293": {
+  "s": "17.63414634146341",
+  "svg": "square-293.svg",
+  "analytic": true
+ },
+ "294": {
+  "s": "17.65685424949238",
+  "svg": "square-294.svg",
+  "analytic": true
+ },
+ "295": {
+  "s": "17.70710678118654",
+  "svg": "square-296.svg",
+  "analytic": true
+ },
+ "296": {
+  "s": "17.70710678118654",
+  "svg": "square-296.svg",
+  "analytic": true
+ },
+ "297": {
+  "s": "17.74106074604732",
+  "svg": "square-297.svg",
+  "analytic": false
+ },
+ "298": {
+  "s": "17.77817459305202",
+  "svg": "square-298.svg",
+  "analytic": true
+ },
+ "299": {
+  "s": "17.82287565553229",
+  "svg": "square-299.svg",
+  "analytic": true
+ },
+ "300": {
+  "s": "17.82412338847854",
+  "svg": "square-300.svg",
+  "analytic": true
+ },
+ "301": {
+  "s": "17.86889155557430",
+  "svg": "square-301.svg",
+  "analytic": false
+ },
+ "302": {
+  "s": "17.88674602860566",
+  "svg": "square-302.svg",
+  "analytic": true
+ },
+ "303": {
+  "s": "17.93125509556197",
+  "svg": "square-303.svg",
+  "analytic": false
+ },
+ "304": {
+  "s": "17.94910783564662",
+  "svg": "square-304.svg",
+  "analytic": false
+ },
+ "305": {
+  "s": "17.96066201401205",
+  "svg": "square-305.svg",
+  "analytic": false
+ },
+ "306": {
+  "s": "17.96913960675661",
+  "svg": "square-306.svg",
+  "analytic": false
+ },
+ "307": {
+  "s": "17.98272201579610",
+  "svg": "square-307.svg",
+  "analytic": false
+ },
+ "322": {
+  "s": "18",
+  "svg": "square-323.svg",
+  "analytic": true
+ },
+ "323": {
+  "s": "18",
+  "svg": "square-323.svg",
+  "analytic": true
+ },
+ "626": {
+  "s": "25.52081528017130",
+  "svg": "square-626.svg",
+  "analytic": true
+ },
+ "1453": {
+  "s": "38.62799971540531",
+  "svg": "square-1453.svg",
+  "analytic": false
+ },
+ "1765": {
+  "s": "42.48797851186022",
+  "svg": "square-1765.svg",
+  "analytic": true
+ },
+ "1850": {
+  "s": "43.48797851186022",
+  "svg": "square-1850.svg",
+  "analytic": true
+ },
+ "2043": {
+  "s": "45.69642783940993",
+  "svg": "square-2043.svg",
+  "analytic": false
+ }
+}
