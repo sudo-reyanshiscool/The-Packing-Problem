@@ -1,0 +1,5 @@
+hop n=17 hours=12.0 workers=14 base_seed=7000000 record=4.6755300936045509516341112704831500000000000000000 s0=4.909307 hops=40 grow=0.015 t_hop=0.002 start_sweeps=200000
+[1] seed 7000004 random     hops=40 best=4.707106781 basins=6 0.01h *best
+[2] seed 7000009 structured hops=40 best=4.707106781 basins=4 0.01h
+[3] seed 7000005 structured hops=40 best=4.707106781 basins=6 0.01h *best
+[4] seed 7000007 random     hops=40 best=4.707106781 basins=3 0.01h

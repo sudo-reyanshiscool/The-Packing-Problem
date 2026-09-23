@@ -124,6 +124,13 @@ the record itself (4.67553009360455095163..., 6 first-order flexes, 1 rattler)
 or to a worse local optimum (4.677648, 4.678926, 4.680125, 4.681980,
 4.682716, 4.683831, 4.688103). Best random-start float s 4.677654 (+2.1e-3).
 
+Basin hopping (`python -m src.hop --n 17 --hours 12`): chains start from a
+random, structured (axis-aligned frame plus free interior) or neighbouring
+record (n = 18 minus a square, n = 16 plus one) start, polish to the local
+optimum of the arrangement, then kick 2 to 3 squares (or swap or straighten a
+tilted one), re-anneal and polish again, with Metropolis acceptance on s.
+Distinct optima are counted in logs/hop_n17_<stamp>.json.
+
 ### Non-analytic records (secondary targets)
 
 All 35 records marked "Not yet analytically optimized" with n <= 307 were
@@ -193,4 +200,5 @@ python -m src.polish candidates/<file>.json
 python -m src.polish records/105.json          # polish a stored record
 python -m src.export verified/<file>.json
 python -m src.certify verified/<file>.json
+python -m src.hop --n 17 --hours 12 --workers 14     # basin hopping, background
 ```
