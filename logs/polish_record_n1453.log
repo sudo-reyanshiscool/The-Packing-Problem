@@ -1,0 +1,5 @@
+polish n=1453 s0=38.627999715405 float64 violation 3.55e-15
+  slp: s=38.627999715353 (-5.197e-11) steps accepted=2 rejected=12 min_g=-9.39e-12 sat_viol=9.40e-12 radius=9.8e-07
+  stage A 64.4s
+  active: 9781 constraints (4818 pair contacts, 80 wall contacts)
+  newton 0: max |g_A| = 1.69e-9

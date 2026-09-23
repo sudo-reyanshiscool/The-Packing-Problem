@@ -200,6 +200,54 @@ class Problem:
             J[r, 2 * n + i] = rx * dnx + ry * dny
         return val, J
 
+    def eval_sparse(self, z):
+        """Same as eval but J is a scipy.sparse CSR matrix (at most 7 nonzeros per row)."""
+        import scipy.sparse as sp
+        n, m = self.n, self.m
+        x, y, t, s = split(z, n)
+        px, py, dpx, dpy = _corners_np(x, y, t)
+        c, sn = np.cos(t), np.sin(t)
+        val = np.empty(m)
+        rows = np.arange(m)
+        j, cr = self.oth, self.cr
+        qx, qy, dqx, dqy = px[j, cr], py[j, cr], dpx[j, cr], dpy[j, cr]
+        R, C, V = [], [], []
+
+        def put(r, cidx, v):
+            R.append(r)
+            C.append(cidx)
+            V.append(v)
+
+        w = self.kind == 1
+        if w.any():
+            k = self.k[w]
+            r, jj = rows[w], j[w]
+            sign = np.where((k == 1) | (k == 3), -1.0, 1.0)
+            horiz = (k == 0) | (k == 1)
+            val[w] = np.where(horiz, qx[w], qy[w]) * sign + np.where(sign < 0, s, 0.0)
+            put(r, jj, np.where(horiz, sign, 0.0))
+            put(r, n + jj, np.where(horiz, 0.0, sign))
+            put(r, 2 * n + jj, np.where(horiz, dqx[w], dqy[w]) * sign)
+            put(r[sign < 0], np.full((sign < 0).sum(), 3 * n), np.ones((sign < 0).sum()))
+        p = ~w
+        if p.any():
+            i, jj, k, r = self.own[p], j[p], self.k[p], rows[p]
+            ci, si = c[i], sn[i]
+            nx = np.select([k == 0, k == 1, k == 2], [ci, -si, -ci], si)
+            ny = np.select([k == 0, k == 1, k == 2], [si, ci, -si], -ci)
+            dnx = np.select([k == 0, k == 1, k == 2], [-si, -ci, si], ci)
+            dny = np.select([k == 0, k == 1, k == 2], [ci, -si, -ci], si)
+            rx, ry = qx[p] - x[i], qy[p] - y[i]
+            val[p] = rx * nx + ry * ny - HALF
+            put(r, jj, nx)
+            put(r, n + jj, ny)
+            put(r, 2 * n + jj, dqx[p] * nx + dqy[p] * ny)
+            put(r, i, -nx)
+            put(r, n + i, -ny)
+            put(r, 2 * n + i, rx * dnx + ry * dny)
+        J = sp.csr_matrix((np.concatenate(V), (np.concatenate(R), np.concatenate(C))), shape=(m, 3 * n + 1))
+        return val, J
+
 
 def choose_constraints(x, y, t, close2=CLOSE2):
     """Wall constraints for every square, and the best separating edge for each close pair."""
@@ -284,26 +332,26 @@ def _restore(z, iters=4, window=1e-4, tol=1e-13):
     change, with s fixed, that makes every constraint within `window` of active
     feasible again at the new linearisation point. An LP: min r subject to
     J dz >= -g, |dz| <= r, ds = 0. Iterated because the constraints are nonlinear."""
+    import scipy.sparse as sp
     from scipy.optimize import linprog
     n = (len(z) - 1) // 3
     N = 3 * n + 1
     for _ in range(iters):
         cons = choose_constraints(*split(z, n)[:3])
-        g, J = Problem(n, cons).eval(z)
+        g, J = Problem(n, cons).eval_sparse(z)
         if g.min() > -tol:
             break
-        rows = g < window
+        rows = np.flatnonzero(g < window)
         A = J[rows]
         m = A.shape[0]
-        # variables: dz (N), r (1)
-        A_ub = np.zeros((m + 2 * N, N + 1))
-        b_ub = np.zeros(m + 2 * N)
-        A_ub[:m, :N] = -A
-        b_ub[:m] = g[rows]
-        A_ub[m:m + N, :N] = np.eye(N)          # dz - r <= 0
-        A_ub[m:m + N, N] = -1.0
-        A_ub[m + N:, :N] = -np.eye(N)          # -dz - r <= 0
-        A_ub[m + N:, N] = -1.0
+        if not np.isfinite(A.data).all():
+            break
+        # variables: dz (N), r (1); rows: -A dz <= g, dz - r <= 0, -dz - r <= 0
+        ones = np.ones(N)
+        A_ub = sp.vstack([sp.hstack([-A, sp.csr_matrix((m, 1))]),
+                          sp.hstack([sp.eye(N), sp.csr_matrix(-ones[:, None])]),
+                          sp.hstack([-sp.eye(N), sp.csr_matrix(-ones[:, None])])], format="csr")
+        b_ub = np.concatenate([g[rows], np.zeros(2 * N)])
         obj = np.zeros(N + 1)
         obj[N] = 1.0
         bounds = [(None, None)] * N + [(0, None)]
@@ -330,7 +378,7 @@ def slp_polish(z, cons, rounds=400, radius=1e-3, log=print):
     N = 3 * n + 1
     obj = np.zeros(N)
     obj[-1] = 1.0
-    g, J = Problem(n, cons).eval(z)
+    g, J = Problem(n, cons).eval_sparse(z)
     s_start = z[-1]
     accepted = rejected = 0
     for r in range(rounds):
@@ -355,7 +403,7 @@ def slp_polish(z, cons, rounds=400, radius=1e-3, log=print):
             break
         z_new = _restore(z + dz)
         cons_new = choose_constraints(*split(z_new, n)[:3])
-        g_new, J_new = Problem(n, cons_new).eval(z_new)
+        g_new, J_new = Problem(n, cons_new).eval_sparse(z_new)
         viol_new = max(0.0, -g_new.min())
         if viol_new > 1e-11 or z_new[-1] >= z[-1]:
             radius *= 0.5
@@ -378,7 +426,7 @@ def slp_polish(z, cons, rounds=400, radius=1e-3, log=print):
 def active_set(z, cons, act_tol):
     n = (len(z) - 1) // 3
     x, y, t, s = split(z, n)
-    g, _ = Problem(n, cons).eval(z)
+    g, _ = Problem(n, cons).eval_sparse(z)
     return [c for c, v in zip(cons, g) if v < act_tol]
 
 

@@ -1,0 +1,26 @@
+Subject: Refinements of 33 "not yet analytically optimized" square packings (n = 103 to 307)
+
+Hello David,
+
+I have refined the packings on your squares-in-squares page that are marked
+"Not yet analytically optimized", for every such n up to 307. Each refinement
+keeps your arrangement and moves it to the exact local optimum of its contact
+structure, so all contacts are closed to about 1e-49 and s decreases. Two
+entries (n = 110 and 126) only move by under 1e-10, so I am not counting them;
+the other 33 improve by between 3e-9 (n = 206) and 6.7e-4 (n = 306, 307).
+
+The SVGs are in your format (entity s, 50-digit coordinates) and each parses
+with parse_svg_packing.py and passes check_packing.py. Each also passes an
+independent 50-digit SAT verifier, and an interval-arithmetic certificate
+proves the stated s is an upper bound to 40 digits. A table of all 33 values
+and the method are in the README alongside the files:
+
+<link to submission folder or attachment>
+
+Code: https://github.com/sudo-reyanshiscool/The-Packing-Problem
+
+Please credit as: "Refined by [your name] in September 2026, working with
+Claude Fable 5.1", or however you prefer.
+
+Best regards,
+[your name]
