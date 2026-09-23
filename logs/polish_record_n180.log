@@ -1,0 +1,27 @@
+polish n=180 s0=13.935087052911 float64 violation 4.44e-16
+  slsqp round 1: s=13.935004279343 iters=28 min_g=-9.26e-08 sat_viol=9.26e-08 cons=5144 (Positive directional derivative for linesearch)
+  slsqp round 2: s=13.935004179860 iters=10 min_g=-6.66e-15 sat_viol=6.22e-15 cons=5144 (Positive directional derivative for linesearch)
+  slsqp round 3: s=13.935004179860 iters=9 min_g=-1.44e-14 sat_viol=1.40e-14 cons=5144 (Positive directional derivative for linesearch)
+  slp: s=13.935004179860 (+0.000e+00) steps accepted=0 rejected=0 min_g=-1.39e-14 sat_viol=1.40e-14 radius=1.0e-03
+  stage A 79.8s
+  active: 947 constraints (463 pair contacts, 48 wall contacts)
+  newton 0: max |g_A| = 1.67e-11
+  newton 1: max |g_A| = 2.83e-24
+  newton 2: max |g_A| = 2.57e-39
+  newton 3: max |g_A| = 3.05e-53
+  verify exact: PASS  n=180  s=13.935004179860414186  worst=7.4837e-49 at pair 3,151  (wall 2.2971e-50 wall 38 bottom; pair 7.4837e-49 pair 3,151; violations>1.0e-30: 0)
+  verified -> verified/n180_s13.935004179860.json
+RESULT 180.json: PASS s=13.9350041798604141858 gap_to_record=-8.287e-05 25 first-order flex(es); rattlers: [122]
+
+##############################################################################
+##############################################################################
+  POSSIBLE NEW RECORD  n = 180
+  old record s = 13.935087052911292701516361474048741081139472163384
+  new s        = 13.935004179860414185869340594167893126392524715069
+  margin       = 8.28730508785e-5
+  written: RECORD_CANDIDATE_n180.json, RECORD_CANDIDATE_n180.svg
+##############################################################################
+##############################################################################
+  re-verifying in a fresh process ...
+  /Users/rg/Documents/IGCSE/Mathematics/Packing Problem/RECORD_CANDIDATE_n180.json: PASS  n=180  s=13.935004179860414186  worst=7.4837e-49 at pair 3,151  (wall 2.2971e-50 wall 38 bottom; pair 7.4837e-49 pair 3,151; violations>1.0e-30: 0)
+  FRESH-PROCESS VERIFICATION PASSED: record candidate stands

@@ -1,0 +1,30 @@
+polish n=241 s0=15.990805178105 float64 violation 0.00e+00
+  slsqp round 1: s=15.990496993675 iters=86 min_g=-4.83e-15 sat_viol=4.00e-15 cons=6964 (Positive directional derivative for linesearch)
+  slsqp round 2: s=15.990496822278 iters=33 min_g=-4.56e-12 sat_viol=4.56e-12 cons=6972 (Positive directional derivative for linesearch)
+  slsqp round 3: s=15.990496626281 iters=15 min_g=-1.13e-14 sat_viol=6.66e-15 cons=6972 (Positive directional derivative for linesearch)
+  slsqp round 4: s=15.990461286426 iters=12 min_g=-9.77e-13 sat_viol=9.77e-13 cons=6972 (Positive directional derivative for linesearch)
+  slsqp round 5: s=15.990439715338 iters=32 min_g=-7.11e-15 sat_viol=7.77e-15 cons=6972 (Positive directional derivative for linesearch)
+  slsqp round 6: s=15.990439715338 iters=5 min_g=-7.11e-15 sat_viol=7.77e-15 cons=6972 (Positive directional derivative for linesearch)
+  slp: s=15.990439715338 (+0.000e+00) steps accepted=0 rejected=0 min_g=-7.11e-15 sat_viol=7.77e-15 radius=1.0e-03
+  stage A 693.4s
+  active: 1338 constraints (668 pair contacts, 60 wall contacts)
+  newton 0: max |g_A| = 1.02e-9
+  newton 1: max |g_A| = 5.65e-22
+  newton 2: max |g_A| = 1.28e-36
+  newton 3: max |g_A| = 9.98e-51
+  verify exact: PASS  n=241  s=15.990439715337761893  worst=5.987e-49 at pair 168,174  (wall 2.6475e-50 wall 3 bottom; pair 5.987e-49 pair 168,174; violations>1.0e-30: 0)
+  verified -> verified/n241_s15.990439715338.json
+RESULT 241.json: PASS s=15.9904397153377618933 gap_to_record=-3.655e-04 12 first-order flex(es); rattlers: none
+
+##############################################################################
+##############################################################################
+  POSSIBLE NEW RECORD  n = 241
+  old record s = 15.990805178105206765140089868167342793987316130311
+  new s        = 15.990439715337761893364015675059828840490368036060
+  margin       = 0.000365462767445
+  written: RECORD_CANDIDATE_n241.json, RECORD_CANDIDATE_n241.svg
+##############################################################################
+##############################################################################
+  re-verifying in a fresh process ...
+  /Users/rg/Documents/IGCSE/Mathematics/Packing Problem/RECORD_CANDIDATE_n241.json: PASS  n=241  s=15.990439715337761893  worst=5.987e-49 at pair 168,174  (wall 2.6475e-50 wall 3 bottom; pair 5.987e-49 pair 168,174; violations>1.0e-30: 0)
+  FRESH-PROCESS VERIFICATION PASSED: record candidate stands

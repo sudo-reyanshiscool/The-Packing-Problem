@@ -1,0 +1,14 @@
+polish n=126 s0=11.774735132407 float64 violation 0.00e+00
+  slsqp round 1: s=11.774735132388 iters=71 min_g=-4.11e-15 sat_viol=3.11e-15 cons=3436 (Positive directional derivative for linesearch)
+  slsqp round 2: s=11.774735132388 iters=5 min_g=-3.16e-15 sat_viol=3.11e-15 cons=3436 (Positive directional derivative for linesearch)
+  slp: s=11.774735132388 (+0.000e+00) steps accepted=0 rejected=0 min_g=-3.16e-15 sat_viol=3.11e-15 radius=1.0e-03
+  stage A 78.8s
+  active: 627 constraints (299 pair contacts, 44 wall contacts)
+  newton 0: max |g_A| = 5.26e-11
+  newton 1: max |g_A| = 8.18e-23
+  newton 2: max |g_A| = 9.71e-38
+  newton 3: max |g_A| = 1.3e-51
+  verify: PASS  n=126  s=11.774735132387832842  worst=3.3142e-49 at pair 111,115  (wall 2.2971e-50 wall 31 bottom; pair 3.3142e-49 pair 111,115; violations>1.0e-30: 0)
+  verified -> verified/n126_s11.774735132388.json
+RESULT 126.json: PASS s=11.7747351323878328424 gap_to_record=-1.871e-11 6 first-order flex(es); rattlers: none
+  s below stored record by 1.87e-11: within the record's stored precision, treated as a rediscovery (no record claim)

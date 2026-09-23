@@ -1,0 +1,27 @@
+polish n=303 s0=17.931255095562 float64 violation 0.00e+00
+  slsqp round 1: s=17.931074803104 iters=44 min_g=-7.51e-12 sat_viol=7.51e-12 cons=8848 (Positive directional derivative for linesearch)
+  slsqp round 2: s=17.931074786003 iters=17 min_g=-1.29e-14 sat_viol=1.35e-14 cons=8848 (Positive directional derivative for linesearch)
+  slsqp round 3: s=17.931074786003 iters=5 min_g=-1.29e-14 sat_viol=1.35e-14 cons=8848 (Positive directional derivative for linesearch)
+  slp: s=17.931065531695 (-9.254e-06) steps accepted=20 rejected=27 min_g=-4.99e-12 sat_viol=4.99e-12 radius=7.8e-06
+  stage A 534.3s
+  active: 1624 constraints (815 pair contacts, 65 wall contacts)
+  newton 0: max |g_A| = 4.99e-12
+  newton 1: max |g_A| = 4.62e-24
+  newton 2: max |g_A| = 4.68e-38
+  newton 3: max |g_A| = 5.84e-52
+  verify exact: PASS  n=303  s=17.931065531695180418  worst=6.8423e-49 at pair 222,228  (wall 4.2764e-50 wall 1 top; pair 6.8423e-49 pair 222,228; violations>1.0e-30: 0)
+  verified -> verified/n303_s17.931065531695.json
+RESULT 303.json: PASS s=17.9310655316951804182 gap_to_record=-1.896e-04 40 first-order flex(es); rattlers: [213, 257]
+
+##############################################################################
+##############################################################################
+  POSSIBLE NEW RECORD  n = 303
+  old record s = 17.931255095561972769814674304937432732017895287142
+  new s        = 17.931065531695180418269803748134664508003006433593
+  margin       = 0.000189563866792
+  written: RECORD_CANDIDATE_n303.json, RECORD_CANDIDATE_n303.svg
+##############################################################################
+##############################################################################
+  re-verifying in a fresh process ...
+  /Users/rg/Documents/IGCSE/Mathematics/Packing Problem/RECORD_CANDIDATE_n303.json: PASS  n=303  s=17.931065531695180418  worst=6.8423e-49 at pair 222,228  (wall 4.2764e-50 wall 1 top; pair 6.8423e-49 pair 222,228; violations>1.0e-30: 0)
+  FRESH-PROCESS VERIFICATION PASSED: record candidate stands

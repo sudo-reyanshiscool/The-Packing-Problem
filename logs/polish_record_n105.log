@@ -1,0 +1,27 @@
+polish n=105 s0=10.807619333307 float64 violation 8.88e-16
+  slsqp round 1: s=10.807588532109 iters=71 min_g=-3.55e-15 sat_viol=3.55e-15 cons=2816 (Positive directional derivative for linesearch)
+  slsqp round 2: s=10.807588532109 iters=43 min_g=-6.11e-15 sat_viol=5.11e-15 cons=2816 (Positive directional derivative for linesearch)
+  slsqp round 3: s=10.807588532109 iters=5 min_g=-4.72e-15 sat_viol=5.11e-15 cons=2816 (Positive directional derivative for linesearch)
+  slp: s=10.807588532109 (+0.000e+00) steps accepted=0 rejected=0 min_g=-4.72e-15 sat_viol=5.11e-15 radius=1.0e-03
+  stage A 60.8s
+  active: 435 constraints (208 pair contacts, 34 wall contacts)
+  newton 0: max |g_A| = 1.48e-10
+  newton 1: max |g_A| = 2.46e-22
+  newton 2: max |g_A| = 3.22e-37
+  newton 3: max |g_A| = 1.43e-51
+  verify: PASS  n=105  s=10.807588532108522064  worst=2.352e-49 at pair 9,10  (wall 2.2971e-50 wall 25 bottom; pair 2.352e-49 pair 9,10; violations>1.0e-30: 0)
+  verified -> verified/n105_s10.807588532109.json
+RESULT 105.json: PASS s=10.8075885321085220644 gap_to_record=-3.080e-05 39 first-order flex(es); rattlers: [2, 65]
+
+##############################################################################
+##############################################################################
+  POSSIBLE NEW RECORD  n = 105
+  old record s = 10.807619333307076000000000000000000000000000000000
+  new s        = 10.807588532108522064409330030732178955817410432921
+  margin       = 3.08011985539e-5
+  written: RECORD_CANDIDATE_n105.json, RECORD_CANDIDATE_n105.svg
+##############################################################################
+##############################################################################
+  re-verifying in a fresh process ...
+  /Users/rg/Documents/IGCSE/Mathematics/Packing Problem/RECORD_CANDIDATE_n105.json: PASS  n=105  s=10.807588532108522064  worst=2.352e-49 at pair 9,10  (wall 2.2971e-50 wall 25 bottom; pair 2.352e-49 pair 9,10; violations>1.0e-30: 0)
+  FRESH-PROCESS VERIFICATION PASSED: record candidate stands

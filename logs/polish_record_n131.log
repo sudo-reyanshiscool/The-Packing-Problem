@@ -1,0 +1,28 @@
+polish n=131 s0=11.956525432809 float64 violation 0.00e+00
+  slsqp round 1: s=11.956521901025 iters=107 min_g=-1.15e-14 sat_viol=1.18e-14 cons=3704 (Positive directional derivative for linesearch)
+  slsqp round 2: s=11.956521900969 iters=33 min_g=-8.88e-15 sat_viol=8.88e-15 cons=3704 (Positive directional derivative for linesearch)
+  slsqp round 3: s=11.956521900969 iters=9 min_g=-8.16e-15 sat_viol=7.11e-15 cons=3704 (Positive directional derivative for linesearch)
+  slp: s=11.956521900969 (+0.000e+00) steps accepted=0 rejected=0 min_g=-7.11e-15 sat_viol=7.11e-15 radius=1.0e-03
+  stage A 137.4s
+  active: 669 constraints (319 pair contacts, 44 wall contacts)
+  newton 0: max |g_A| = 5.76e-9
+  newton 1: max |g_A| = 9.95e-15
+  newton 2: max |g_A| = 7.27e-30
+  newton 3: max |g_A| = 3.18e-44
+  newton 4: max |g_A| = 1.18e-58
+  verify: PASS  n=131  s=11.956521900968977892  worst=4.2764e-49 at pair 91,93  (wall 2.2971e-50 wall 1 bottom; pair 4.2764e-49 pair 91,93; violations>1.0e-30: 0)
+  verified -> verified/n131_s11.956521900969.json
+RESULT 131.json: PASS s=11.9565219009689778920 gap_to_record=-3.532e-06 16 first-order flex(es); rattlers: none
+
+##############################################################################
+##############################################################################
+  POSSIBLE NEW RECORD  n = 131
+  old record s = 11.956525432809264189759663866929357324647487847643
+  new s        = 11.956521900968977892091216356595865168399490930451
+  margin       = 3.5318402863e-6
+  written: RECORD_CANDIDATE_n131.json, RECORD_CANDIDATE_n131.svg
+##############################################################################
+##############################################################################
+  re-verifying in a fresh process ...
+  /Users/rg/Documents/IGCSE/Mathematics/Packing Problem/RECORD_CANDIDATE_n131.json: PASS  n=131  s=11.956521900968977892  worst=4.2764e-49 at pair 91,93  (wall 2.2971e-50 wall 1 bottom; pair 4.2764e-49 pair 91,93; violations>1.0e-30: 0)
+  FRESH-PROCESS VERIFICATION PASSED: record candidate stands

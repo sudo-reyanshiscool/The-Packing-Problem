@@ -1,0 +1,26 @@
+polish n=152 s0=12.830959544726 float64 violation 0.00e+00
+  slsqp round 1: s=12.830718800977 iters=16 min_g=-1.05e-14 sat_viol=8.10e-15 cons=4368 (Positive directional derivative for linesearch)
+  slsqp round 2: s=12.830718800977 iters=5 min_g=-7.77e-15 sat_viol=8.10e-15 cons=4368 (Positive directional derivative for linesearch)
+  slp: s=12.830718800976 (-4.299e-13) steps accepted=2 rejected=10 min_g=-6.32e-12 sat_viol=6.32e-12 radius=3.9e-06
+  stage A 37.7s
+  active: 911 constraints (425 pair contacts, 44 wall contacts)
+  newton 0: max |g_A| = 6.32e-12
+  newton 1: max |g_A| = 1.65e-23
+  newton 2: max |g_A| = 1.36e-37
+  newton 3: max |g_A| = 4.84e-52
+  verify: PASS  n=152  s=12.830718800976609955  worst=8.2321e-49 at pair 120,151  (wall 5.3455e-49 wall 150 top; pair 8.2321e-49 pair 120,151; violations>1.0e-30: 0)
+  verified -> verified/n152_s12.830718800977.json
+RESULT 152.json: PASS s=12.8307188009766099551 gap_to_record=-2.407e-04 17 first-order flex(es); rattlers: [84, 121]
+
+##############################################################################
+##############################################################################
+  POSSIBLE NEW RECORD  n = 152
+  old record s = 12.830959544726008471975511965936460000000000000000
+  new s        = 12.830718800976609955101868520131320427966442452920
+  margin       = 0.000240743749399
+  written: RECORD_CANDIDATE_n152.json, RECORD_CANDIDATE_n152.svg
+##############################################################################
+##############################################################################
+  re-verifying in a fresh process ...
+  /Users/rg/Documents/IGCSE/Mathematics/Packing Problem/RECORD_CANDIDATE_n152.json: PASS  n=152  s=12.830718800976609955  worst=8.2321e-49 at pair 120,151  (wall 5.3455e-49 wall 150 top; pair 8.2321e-49 pair 120,151; violations>1.0e-30: 0)
+  FRESH-PROCESS VERIFICATION PASSED: record candidate stands

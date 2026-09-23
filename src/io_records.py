@@ -54,7 +54,7 @@ def save_packing(path, packing: dict) -> None:
 def fmt(x, digits: int = DIGITS) -> str:
     """Format a number (float, Decimal, mpf, str) as a full-precision string."""
     if isinstance(x, float):
-        return repr(x)
+        return repr(float(x))  # float() strips numpy's np.float64(...) repr
     with mpmath.workdps(digits + 10):
         return mpmath.nstr(mpmath.mpf(str(x)), digits, strip_zeros=False,
                            min_fixed=-mpmath.inf, max_fixed=mpmath.inf)

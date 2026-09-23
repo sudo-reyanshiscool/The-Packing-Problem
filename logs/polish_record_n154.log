@@ -1,0 +1,27 @@
+polish n=154 s0=12.931667129627 float64 violation 8.88e-16
+  slsqp round 1: s=12.931664736105 iters=25 min_g=-2.67e-07 sat_viol=2.67e-07 cons=4340 (Positive directional derivative for linesearch)
+  slsqp round 2: s=12.931663734802 iters=53 min_g=-1.25e-14 sat_viol=1.01e-14 cons=4340 (Positive directional derivative for linesearch)
+  slsqp round 3: s=12.931663734802 iters=10 min_g=-6.83e-15 sat_viol=6.88e-15 cons=4340 (Positive directional derivative for linesearch)
+  slp: s=12.931663734802 (-1.776e-15) steps accepted=1 rejected=11 min_g=-5.27e-12 sat_viol=5.27e-12 radius=9.8e-07
+  stage A 141.4s
+  active: 797 constraints (389 pair contacts, 44 wall contacts)
+  newton 0: max |g_A| = 5.27e-12
+  newton 1: max |g_A| = 2.45e-23
+  newton 2: max |g_A| = 5.06e-38
+  newton 3: max |g_A| = 5.59e-52
+  verify: PASS  n=154  s=12.931663734803369318  worst=8.1252e-49 at pair 115,120  (wall 4.0626e-49 wall 113 right; pair 8.1252e-49 pair 115,120; violations>1.0e-30: 0)
+  verified -> verified/n154_s12.931663734803.json
+RESULT 154.json: PASS s=12.9316637348033693178 gap_to_record=-3.395e-06 18 first-order flex(es); rattlers: none
+
+##############################################################################
+##############################################################################
+  POSSIBLE NEW RECORD  n = 154
+  old record s = 12.931667129626558012629465190603340263737412077356
+  new s        = 12.931663734803369317889995174633959284817325581274
+  margin       = 3.39482318869e-6
+  written: RECORD_CANDIDATE_n154.json, RECORD_CANDIDATE_n154.svg
+##############################################################################
+##############################################################################
+  re-verifying in a fresh process ...
+  /Users/rg/Documents/IGCSE/Mathematics/Packing Problem/RECORD_CANDIDATE_n154.json: PASS  n=154  s=12.931663734803369318  worst=8.1252e-49 at pair 115,120  (wall 4.0626e-49 wall 113 right; pair 8.1252e-49 pair 115,120; violations>1.0e-30: 0)
+  FRESH-PROCESS VERIFICATION PASSED: record candidate stands

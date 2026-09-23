@@ -1,0 +1,24 @@
+polish n=110 s0=10.996793274020 float64 violation 8.88e-16
+  slsqp round 1: s=10.996793273954 iters=19 min_g=-5.16e-15 sat_viol=4.00e-15 cons=3064 (Positive directional derivative for linesearch)
+  slsqp round 2: s=10.996793273954 iters=67 min_g=-5.00e-14 sat_viol=2.53e-14 cons=3064 (Positive directional derivative for linesearch)
+  slsqp round 3: s=10.996793273954 iters=15 min_g=-5.33e-15 sat_viol=3.55e-15 cons=3064 (Positive directional derivative for linesearch)
+  slsqp round 4: s=10.996793273954 iters=23 min_g=-1.24e-14 sat_viol=1.24e-14 cons=3064 (Positive directional derivative for linesearch)
+  slsqp round 5: s=10.996793273954 iters=43 min_g=-5.33e-15 sat_viol=5.33e-15 cons=3064 (Positive directional derivative for linesearch)
+  slsqp round 6: s=10.996793273954 iters=50 min_g=-1.15e-13 sat_viol=8.35e-14 cons=3064 (Positive directional derivative for linesearch)
+  slsqp round 7: s=10.996793273954 iters=70 min_g=-3.94e-15 sat_viol=3.55e-15 cons=3064 (Positive directional derivative for linesearch)
+  slsqp round 8: s=10.996793273954 iters=47 min_g=-5.16e-15 sat_viol=4.00e-15 cons=3064 (Positive directional derivative for linesearch)
+  slsqp round 9: s=10.996793273954 iters=16 min_g=-1.60e-14 sat_viol=1.60e-14 cons=3064 (Positive directional derivative for linesearch)
+  slsqp round 10: s=10.996793273954 iters=70 min_g=-1.42e-14 sat_viol=1.42e-14 cons=3064 (Positive directional derivative for linesearch)
+  slsqp round 11: s=10.996793273954 iters=43 min_g=-1.72e-14 sat_viol=1.75e-14 cons=3064 (Positive directional derivative for linesearch)
+  slsqp round 12: s=10.996793273954 iters=47 min_g=-3.55e-15 sat_viol=3.55e-15 cons=3064 (Positive directional derivative for linesearch)
+  slp: s=10.996793273954 (+0.000e+00) steps accepted=0 rejected=0 min_g=-3.55e-15 sat_viol=3.55e-15 radius=1.0e-03
+  stage A 269.4s
+  active: 563 constraints (280 pair contacts, 38 wall contacts)
+  newton 0: max |g_A| = 2.15e-11
+  newton 1: max |g_A| = 1.3e-25
+  newton 2: max |g_A| = 6.77e-40
+  newton 3: max |g_A| = 3.89e-54
+  verify: PASS  n=110  s=10.996793273953749242  worst=4.0626e-49 at pair 12,13  (wall 2.2971e-50 wall 1 bottom; pair 4.0626e-49 pair 12,13; violations>1.0e-30: 0)
+  verified -> verified/n110_s10.996793273954.json
+RESULT 110.json: PASS s=10.9967932739537492422 gap_to_record=-6.582e-11 7 first-order flex(es); rattlers: [67]
+  s below stored record by 6.58e-11: within the record's stored precision, treated as a rediscovery (no record claim)

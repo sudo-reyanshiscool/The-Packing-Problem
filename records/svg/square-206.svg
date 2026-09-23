@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Found by David Ellsworth on December 14, 2024, including adapting and extending the technique used in the s(37) found by David W. Cantrell in September 2002.
+    Improved by David Ellsworth on December 21, 2024. The result now, in a way, seems to extends the s(19) found by Robert Wainwright in late 1979, resembling one of its alternative packings found by found by David W. Cantrell in 2002.
+    Made internally symmetric by David Ellsworth on December 27, 2024.
+    Improved by David Ellsworth on December 31, 2025, using his modified version of Thomas Schadt's computer program, with s = 14.872531890751524.
+    Improved by Tej Stead on June 16, 2026, working with Claude Fable 5.
+        Source: Private communication from Tej Stead to David Ellsworth, on June 16, 2026
+    Improved by Joost de Winter on August 7, 2026, working with GPT5.6-Sol and Claude Fable 5 (back and forth)
+        Found independently of Ted Stead's improvement, as that was not yet published at the time this one was found.
+        Source: Private communication from Joost de Winter to David Ellsworth, on August 7, 2026
+        The following notes were provided:
+            Improved s(206) candidate, 2026-08-07: strict-validity frontier version.
+            Two-chain basin geometry (independently reached from five lineages).
+            Side length reduced from 14.872531890751524 by 0.000312861725316.
+            Strict validity on these exact coordinates, verified in 40-digit arithmetic:
+            min pair separation 1.53e-10, min wall clearance 1.21e-10 (five orders of magnitude above coordinate rounding noise).
+        The following method summary was provided:
+            A sequential linear program over all 619 variables (206 centres, 206 angles, S); per near pair the best separating axis is linearised, HiGHS solves the LP, and every step is re-validated against the exact geometry.
+            The key idea: at 2e-9 clearance, second-order rotation error makes a packing look locally optimal when it is not, so it optimises at looser clearance first and then tightens.
+            Starting from David Ellsworth's December 31, 2025 version it takes about two minutes on one core.
+    Cleaned up by David Ellsworth on August 13, 2026, to resemble the previous version (with approximated internal rotational symmetry), with no change in size.
+-->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+    <!ENTITY  s "14.87221902902620800000000000000000000000000000000000">
+    <!ENTITY hs  "7.43610951451310400000000000000000000000000000000000">
+]>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="-&hs; -&hs; &s; &s;" style="fill:#B2B2B2; stroke:black; stroke-width:0.002" id="svg">
+    <script xlink:href="svgDisp.js"/>
+    <defs>
+        <rect width="&s;" height="&s;" id="outer" x="-&hs;" y="-&hs;"/>
+        <rect width="1"   height="1"   id="one"/>
+    </defs>
+    <use xlink:href="#outer" style="fill:white; stroke:none"/>
+    <g transform="translate(-&hs; -&hs;)">
+        <g>
+            <path style="stroke:none" d="M0, 0 H12 V1 H11 V2 H10 V3 H9 V4 H8 V5 H7 V6 H6 V7 H5 V8 H4 V9 H3 V10 H2 V11 H1 V12 H0"/>
+            <path style=  "fill:none" d="M0, 1 H12 V0
+                                         M0, 2 H11 V0
+                                         M0, 3 H10 V0
+                                         M0, 4 H 9 V0
+                                         M0, 5 H 8 V0
+                                         M0, 6 H 7 V0
+                                         M0, 7 H 6 V0
+                                         M0, 8 H 5 V0
+                                         M0, 9 H 4 V0
+                                         M0,10 H 3 V0
+                                         M0,11 H 2 V0
+                                         M0,12 H 1 V0"/>
+        </g>
+        <g transform="translate(&s; &s;) scale(-1 -1)">
+            <path style="stroke:none" d="M0,0 H13 V1 H12 V2 H11 V3 H10 V4 H9 V5 H8 V6 H7 V7 H6 V8 H5 V9 H4 V10 H3 V11 H2 V12 H1 V13 H0"/>
+            <path style=  "fill:none" d="M13,0 V 1 H0
+                                         M12,0 V 2 H0
+                                         M11,0 V 3 H0
+                                         M10,0 V 4 H0
+                                         M 9,0 V 5 H0
+                                         M 8,0 V 6 H0
+                                         M 7,0 V 7 H0
+                                         M 6,0 V 8 H0
+                                         M 5,0 V 9 H0
+                                         M 4,0 V10 H0
+                                         M 3,0 V11 H0
+                                         M 2,0 V12 H0
+                                         M 1,0 V13 H0"/>
+        </g>
+        <g transform="translate(&s; 0) scale(-1  1)">
+            <path style="stroke:none" d="M2,0 V1 H0 V0"/>
+            <path style=  "fill:none" d="M2,0 V1 H0
+                                         M1,0 V1"/>
+        </g>
+        <g transform="translate(0 &s;) scale( 1 -1)">
+            <rect style="stroke:none" width="1" height="1"/>
+            <path style=  "fill:none" d="M1,0 V1 H0"/>
+        </g>
+    </g>
+    <g transform="scale(1 -1)">
+        <use xlink:href="#one" transform="translate( -6.71018731115416400000000000000000000000000000000000  -5.46816912828105500000000000000000000000000000000000) rotate(50.77503457327917100000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate( -5.93880846816266900000000000000000000000000000000000  -6.10472156221282400000000000000000000000000000000000) rotate(50.76368624765918700000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate( -5.96887587172472100000000000000000000000000000000000  -4.78208872880761200000000000000000000000000000000000) rotate(50.80553034313738400000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate( -5.19749461274820606908372379075441923277466726041483  -5.41885055547117529971934209703245953130874238454138) rotate(50.77895088556287800000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate( -5.22600742542941300000000000000000000000000000000000  -4.09554656664758900000000000000000000000000000000000) rotate(50.56100570144134600000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate( -4.45496273009268793091627620924558076722533273958517  -4.73233067302448070028065790296754046869125761545862) rotate(50.56100558697457400000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate( -4.59077467504212000000000000000000000000000000000000  -3.32300353027535100000000000000000000000000000000000) rotate(50.58068051219606800000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate( -3.81970645561841800000000000000000000000000000000000  -3.96002926424037800000000000000000000000000000000000) rotate(50.56100560230874000000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate( -3.84943662142257400000000000000000000000000000000000  -2.63773737553777900000000000000000000000000000000000) rotate(50.56100560264144400000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate( -3.07861003249417985622934647497043748535170420942660  -3.27478663556281675900979137737886431663192883921833) rotate(50.56100560264138700000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate( -3.10540964672786000000000000000000000000000000000000  -1.94674271754111100000000000000000000000000000000000) rotate(49.58125961038209100000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate( -2.27712711657820014377065352502956251464829579057340  -2.58773812873723224099020862262113568336807116078167) rotate(44.00810747700295200000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate( -2.36834491811849100000000000000000000000000000000000  -1.15556636718215200000000000000000000000000000000000) rotate(39.43899439266054700000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate( -1.58704949749802200000000000000000000000000000000000  -1.80774332381171400000000000000000000000000000000000) rotate(39.43899439266062500000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate( -1.66887486961367400000000000000000000000000000000000  -0.37895550857735600000000000000000000000000000000000) rotate(44.65712747726902900000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate( -0.86306580929675200000000000000000000000000000000000  -1.02106610634971200000000000000000000000000000000000) rotate(48.02582432251971100000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate( -0.88461566436285100000000000000000000000000000000000   0.31949433480149800000000000000000000000000000000000) rotate(50.56100560409149100000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate( -0.11538433573723376547843370092681146497156247850080  -0.31949433464000476327689101654136513342160568376825) rotate(50.56100560409149100000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate(  5.71032643696973400000000000000000000000000000000000   5.46847916742325200000000000000000000000000000000000) rotate(50.77195089803166200000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate(  4.93882600495391100000000000000000000000000000000000   6.10473904542306200000000000000000000000000000000000) rotate(50.77108914442491300000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate(  4.96876586340393636388661258160750730554319374980351   4.78280544595763187385270849700814429999773987748657) rotate(50.78526091606593700000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate(  4.19612559725262400000000000000000000000000000000000   5.42001830933799300000000000000000000000000000000000) rotate(50.78265300526227600000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate(  4.22642656228067063611338741839249269445680625019649   4.09605613107516112614729150299185570000226012251343) rotate(50.56100560828829800000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate(  3.45496272926229000000000000000000000000000000000000   4.73233067305056700000000000000000000000000000000000) rotate(50.56100560911053800000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate(  3.59124988064135800000000000000000000000000000000000   3.32292590505568000000000000000000000000000000000000) rotate(50.49340998383569000000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate(  2.81970645540124100000000000000000000000000000000000   3.96002926392936900000000000000000000000000000000000) rotate(50.56100560911053800000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate(  2.84937588735926600000000000000000000000000000000000   2.63766353549058100000000000000000000000000000000000) rotate(50.56100560911100000000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate(  2.07861003211789900000000000000000000000000000000000   3.27478663536441800000000000000000000000000000000000) rotate(50.56100560911094300000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate(  2.10508897528147100000000000000000000000000000000000   1.94620134612935000000000000000000000000000000000000) rotate(49.50078306629160400000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate(  1.27757761716081600000000000000000000000000000000000   2.58725570245071500000000000000000000000000000000000) rotate(44.00641565385446800000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate(  1.36835660001130600000000000000000000000000000000000   1.15557597630332300000000000000000000000000000000000) rotate(39.43899439774498500000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate(  0.58704949741377100000000000000000000000000000000000   1.80774332391804600000000000000000000000000000000000) rotate(39.43899439774503400000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate(  0.66568670092233276547843370092681146497156247850080   0.37918788332097276327689101654136513342160568376825) rotate(44.96425394331430400000000000000000000000000000000000) translate(-.5 -.5)"/>
+        <use xlink:href="#one" transform="translate( -0.13693419069784200000000000000000000000000000000000   1.02106610632898100000000000000000000000000000000000) rotate(48.02582433203567500000000000000000000000000000000000) translate(-.5 -.5)"/>
+    </g>
+    <use xlink:href="#outer" style="fill:none"/>
+</svg>

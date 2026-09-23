@@ -1,0 +1,36 @@
+polish n=272 s0=16.969716024199 float64 violation 4.44e-16
+  slsqp round 1: s=16.969464778066 iters=25 min_g=-1.65e-07 sat_viol=1.65e-07 cons=7876 (Positive directional derivative for linesearch)
+  slsqp round 2: s=16.969452126334 iters=32 min_g=-1.53e-07 sat_viol=1.53e-07 cons=7876 (Positive directional derivative for linesearch)
+  slsqp round 3: s=16.969452126334 iters=5 min_g=-1.53e-07 sat_viol=1.53e-07 cons=7876 (Positive directional derivative for linesearch)
+  slsqp round 4: s=16.969452126334 iters=5 min_g=-1.53e-07 sat_viol=1.53e-07 cons=7876 (Positive directional derivative for linesearch)
+  slsqp round 5: s=16.969452126334 iters=5 min_g=-1.53e-07 sat_viol=1.53e-07 cons=7876 (Positive directional derivative for linesearch)
+  slsqp round 6: s=16.969452126334 iters=5 min_g=-1.53e-07 sat_viol=1.53e-07 cons=7876 (Positive directional derivative for linesearch)
+  slsqp round 7: s=16.969452126334 iters=5 min_g=-1.53e-07 sat_viol=1.53e-07 cons=7876 (Positive directional derivative for linesearch)
+  slsqp round 8: s=16.969452126334 iters=5 min_g=-1.53e-07 sat_viol=1.53e-07 cons=7876 (Positive directional derivative for linesearch)
+  slsqp round 9: s=16.969452126334 iters=5 min_g=-1.53e-07 sat_viol=1.53e-07 cons=7876 (Positive directional derivative for linesearch)
+  slsqp round 10: s=16.969452126334 iters=5 min_g=-1.53e-07 sat_viol=1.53e-07 cons=7876 (Positive directional derivative for linesearch)
+  slsqp round 11: s=16.969452126334 iters=5 min_g=-1.53e-07 sat_viol=1.53e-07 cons=7876 (Positive directional derivative for linesearch)
+  slsqp round 12: s=16.969452126334 iters=5 min_g=-1.53e-07 sat_viol=1.53e-07 cons=7876 (Positive directional derivative for linesearch)
+  slp: s=16.969449023634 (-3.103e-06) steps accepted=26 rejected=34 min_g=-8.85e-12 sat_viol=8.85e-12 radius=3.9e-06
+  stage A 691.6s
+  active: 1421 constraints (724 pair contacts, 59 wall contacts)
+  newton 0: max |g_A| = 8.85e-12
+  newton 1: max |g_A| = 5.63e-22
+  newton 2: max |g_A| = 4.54e-36
+  newton 3: max |g_A| = 4.5e-50
+  verify exact: PASS  n=272  s=16.969449023634420118  worst=8.7667e-49 at pair 198,203  (wall 4.6773e-50 wall 26 left; pair 8.7667e-49 pair 198,203; violations>1.0e-30: 0)
+  verified -> verified/n272_s16.969449023634.json
+RESULT 272.json: PASS s=16.9694490236344201184 gap_to_record=-2.670e-04 30 first-order flex(es); rattlers: [262]
+
+##############################################################################
+##############################################################################
+  POSSIBLE NEW RECORD  n = 272
+  old record s = 16.969716024199030650346081819162701180276347611847
+  new s        = 16.969449023634420118460142232890174156285965524868
+  margin       = 0.000267000564611
+  written: RECORD_CANDIDATE_n272.json, RECORD_CANDIDATE_n272.svg
+##############################################################################
+##############################################################################
+  re-verifying in a fresh process ...
+  /Users/rg/Documents/IGCSE/Mathematics/Packing Problem/RECORD_CANDIDATE_n272.json: PASS  n=272  s=16.969449023634420118  worst=8.7667e-49 at pair 198,203  (wall 4.6773e-50 wall 26 left; pair 8.7667e-49 pair 198,203; violations>1.0e-30: 0)
+  FRESH-PROCESS VERIFICATION PASSED: record candidate stands

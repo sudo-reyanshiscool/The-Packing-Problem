@@ -1,0 +1,24 @@
+polish n=181 s0=13.956906723418 float64 violation 4.44e-16
+  slp: s=13.956795253627 (-1.115e-04) steps accepted=31 rejected=22 min_g=-2.33e-14 sat_viol=2.33e-14 radius=2.4e-06
+  stage A 128.9s
+  active: 887 constraints (439 pair contacts, 46 wall contacts)
+  newton 0: max |g_A| = 6.07e-12
+  newton 1: max |g_A| = 2.14e-24
+  newton 2: max |g_A| = 2.68e-39
+  newton 3: max |g_A| = 1.66e-53
+  verify exact: PASS  n=181  s=13.956795253626572224  worst=5.3455e-49 at pair 140,141  (wall 2.2971e-50 wall 1 bottom; pair 5.3455e-49 pair 140,141; violations>1.0e-30: 0)
+  verified -> verified/n181_s13.956795253627.json
+RESULT 181.json: PASS s=13.9567952536265722235 gap_to_record=-1.115e-04 39 first-order flex(es); rattlers: [24, 126, 130, 180]
+
+##############################################################################
+##############################################################################
+  POSSIBLE NEW RECORD  n = 181
+  old record s = 13.956906723417558259094511289126943734840901972785
+  new s        = 13.956795253626572223513631157582340863390887170680
+  margin       = 0.000111469790986
+  written: RECORD_CANDIDATE_n181.json, RECORD_CANDIDATE_n181.svg
+##############################################################################
+##############################################################################
+  re-verifying in a fresh process ...
+  /Users/rg/Documents/IGCSE/Mathematics/Packing Problem/RECORD_CANDIDATE_n181.json: PASS  n=181  s=13.956795253626572224  worst=5.3455e-49 at pair 140,141  (wall 2.2971e-50 wall 1 bottom; pair 5.3455e-49 pair 140,141; violations>1.0e-30: 0)
+  FRESH-PROCESS VERIFICATION PASSED: record candidate stands

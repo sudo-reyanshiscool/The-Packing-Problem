@@ -1,0 +1,28 @@
+polish n=301 s0=17.868891555574 float64 violation 0.00e+00
+  slsqp round 1: s=17.868685157286 iters=16 min_g=-6.29e-06 sat_viol=6.29e-06 cons=8984 (Positive directional derivative for linesearch)
+  slsqp round 2: s=17.868678365107 iters=44 min_g=-1.60e-14 sat_viol=1.64e-14 cons=8984 (Positive directional derivative for linesearch)
+  slsqp round 3: s=17.868678365107 iters=5 min_g=-1.60e-14 sat_viol=1.64e-14 cons=8984 (Positive directional derivative for linesearch)
+  slp: s=17.868678365107 (+0.000e+00) steps accepted=0 rejected=4 min_g=-1.60e-14 sat_viol=1.64e-14 radius=6.3e-05
+  stage A 569.0s
+  active: 1878 constraints (909 pair contacts, 60 wall contacts)
+  newton 0: max |g_A| = 6.38e-9
+  newton 1: max |g_A| = 1.26e-17
+  newton 2: max |g_A| = 1.7e-32
+  newton 3: max |g_A| = 6.99e-46
+  newton 4: max |g_A| = 5.29e-60
+  verify exact: PASS  n=301  s=17.868678365107171854  worst=6.2008e-49 at pair 249,292  (wall 2.5659e-49 wall 253 right; pair 6.2008e-49 pair 249,292; violations>1.0e-30: 0)
+  verified -> verified/n301_s17.868678365107.json
+RESULT 301.json: PASS s=17.8686783651071718539 gap_to_record=-2.132e-04 58 first-order flex(es); rattlers: [255, 259, 260, 261, 262, 265, 294, 297, 298, 299, 300]
+
+##############################################################################
+##############################################################################
+  POSSIBLE NEW RECORD  n = 301
+  old record s = 17.868891555574307214616943920146909767997600877722
+  new s        = 17.868678365107171853933065248167373548136261840088
+  margin       = 0.000213190467135
+  written: RECORD_CANDIDATE_n301.json, RECORD_CANDIDATE_n301.svg
+##############################################################################
+##############################################################################
+  re-verifying in a fresh process ...
+  /Users/rg/Documents/IGCSE/Mathematics/Packing Problem/RECORD_CANDIDATE_n301.json: PASS  n=301  s=17.868678365107171854  worst=6.2008e-49 at pair 249,292  (wall 2.5659e-49 wall 253 right; pair 6.2008e-49 pair 249,292; violations>1.0e-30: 0)
+  FRESH-PROCESS VERIFICATION PASSED: record candidate stands
