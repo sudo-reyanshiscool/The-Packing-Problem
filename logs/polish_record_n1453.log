@@ -3,3 +3,13 @@ polish n=1453 s0=38.627999715405 float64 violation 3.55e-15
   stage A 64.4s
   active: 9781 constraints (4818 pair contacts, 80 wall contacts)
   newton 0: max |g_A| = 1.69e-9
+  newton 1: max |g_A| = 1.15e-19
+  newton 2: max |g_A| = 1.46e-34
+  newton 3: max |g_A| = 2.22e-48
+  newton 4: max |g_A| = 6.92e-60
+  verify exact: PASS  n=1453  s=38.627999715439086553  worst=9.4081e-49 at pair 1301,1452  (wall 2.2971e-50 wall 633 bottom; pair 9.4081e-49 pair 1301,1452; violations>1.0e-30: 0)
+  verify float: FAIL  n=1453  s=38.627999715353347199  worst=9.3954e-12 at pair 1449,1450  (wall 5.0912e-15 wall 510 left; pair 9.3954e-12 pair 1449,1450; violations>1.0e-30: 2032)
+  inflating float by 3.758e-11
+  verify float: PASS  n=1453  s=38.627999716805043992  worst=0.0  (wall 0.0 -; pair 0.0 -; violations>1.0e-30: 0)
+  verified -> verified/n1453_s38.627999715439.json
+RESULT 1453.json: PASS s=38.6279997154390865532 gap_to_record=+3.377e-11 249 first-order flex(es); rattlers: [34, 278, 329, 398, 493, 563, 623, 703, 920, 1045, 1108, 1162, 1207, 1253, 1277, 1292, 1298]

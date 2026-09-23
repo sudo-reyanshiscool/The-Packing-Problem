@@ -183,7 +183,10 @@ claimed.
 
 Every improved packing keeps the record's contact structure; the stored
 packings were simply not at the local optimum of the contact-constrained
-problem (they are numerically found, hence the page's label). Logs: logs/polish_record_n<n>.log.
+problem (they are numerically found, hence the page's label). Logs: logs/polish_record_n<n>.log. n = 1453 polished (sparse LP path,
+`--skip-slsqp`) to within 3e-11 of the page value: already at its optimum,
+not claimed. The 33 submission files (submission/) are inflated by 1e-45 and
+all pass the vendor checker (logs/vendor_check_submission.log).
 All 33 improvements are certified by src.certify; HiGHS needs a per-solve
 time limit (LP_OPTS) because a degenerate simplex ran for hours at n = 304.
 
